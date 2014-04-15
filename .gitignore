@@ -1,3 +1,6 @@
+/public/admin
+/public/*.html
+
 /bootstrap/compiled.php
 /vendor
 composer.phar
