@@ -1,6 +1,6 @@
 <?php
 
-class Vendor extends \Eloquent {
+class Category extends \Eloquent {
 
 	// Add your validation rules here
 	public static $rules = [

@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@include('shared.page-header',array('heading'=>'Vendors','description'=>'List of vendors defined in the system'))
+@include('shared.page-header',array('heading'=>'Products','description'=>'List of products defined in the system'))
 
 @section('content')
 <!-- start: PAGE CONTENT -->
@@ -9,28 +9,24 @@
         <!-- start: DYNAMIC TABLE PANEL -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                <i class="fa fa-group"></i> List of Vendors
+                <i class="fa fa-group"></i> List of Products
             </div>
             <div class="panel-body">
-                <table class="table table-striped table-bordered table-hover table-full-width" id="vendors">
+                <table class="table table-striped table-bordered table-hover table-full-width" id="products">
                     <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Email</th>
-                        <th class="hidden-xs">Web</th>
-                        <th class="hidden-xs"> Telephone</th>
-                        <th class="hidden-xs">Postcode</th>
+                        <th >Category</th>
+                        <th class="hidden-xs">Vednor</th>
                         <th class="hidden-xs"></th>
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach ($vendors as $vendor)
+                    @foreach ($products as $product)
                     <tr>
-                        <td>{{ $vendor->name }}</td>
-                        <td >{{ $vendor->email }}</td>
-                        <td class="hidden-xs">{{ $vendor->web }}</td>
-                        <td class="hidden-xs">{{ $vendor->telephone }}</td>
-                        <td class="hidden-xs">{{ $vendor->postcode }}</td>
+                        <td>{{ $product->name }}</td>
+                        <td class="hidden-xs"> {{ link_to('categories/'.$product->category->id ,  $product->category->name ) }}</td>
+                        <td class="hidden-xs">{{ link_to('vendors/'.$product->vendor->id ,  $product->vendor->name  ) }} </td>
                         <td class="hidden-xs center">
                             @include('shared.grid-buttons',array('editLink'=>'new','removeLink'=>'Remove'))
                         </td>
@@ -46,6 +42,6 @@
 <!-- end: PAGE CONTENT-->
 @stop
 
-@include('shared.page-footer-index',array('tableID'=>'vendors'))
+@include('shared.page-footer-index',array('tableID'=>'products'))
 
 
