@@ -18,18 +18,18 @@
     <meta content="" name="author" />
     <!-- end: META -->
     <!-- start: MAIN CSS -->
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/fonts/style.css">
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/css/main.css">
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/css/main-responsive.css">
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/plugins/iCheck/skins/all.css">
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/plugins/bootstrap-colorpalette/css/bootstrap-colorpalette.css">
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/plugins/perfect-scrollbar/src/perfect-scrollbar.css">
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/css/theme_light.css" type="text/css" id="skin_color">
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/css/print.css" type="text/css" media="print"/>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main-responsive.css">
+    <link rel="stylesheet" href="assets/plugins/iCheck/skins/all.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-colorpalette/css/bootstrap-colorpalette.css">
+    <link rel="stylesheet" href="assets/plugins/perfect-scrollbar/src/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/css/theme_light.css" type="text/css" id="skin_color">
+    <link rel="stylesheet" href="assets/css/print.css" type="text/css" media="print"/>
     <!--[if IE 7]>
-    <link rel="stylesheet" href="{{ URL::to('/') }}/assets/plugins/font-awesome/css/font-awesome-ie7.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome-ie7.min.css">
     <![endif]-->
     <!-- end: MAIN CSS -->
     <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
@@ -55,7 +55,7 @@
 </div>
 <!-- end: MAIN MENU TOGGLER BUTTON -->
 <!-- start: MAIN NAVIGATION MENU -->
-    @include('layouts.main-navigation-menu')
+@include('layouts.main-navigation-menu')
 <!-- end: MAIN NAVIGATION MENU -->
 </div>
 <!-- end: SIDEBAR -->
@@ -103,7 +103,14 @@
 </div>
 <!-- end: MAIN CONTAINER -->
 <!-- start: FOOTER -->
-@include('layouts.footer')
+<div class="footer clearfix">
+    <div class="footer-inner">
+        2014 &copy; clip-one by cliptheme.
+    </div>
+    <div class="footer-items">
+        <span class="go-top"><i class="clip-chevron-up"></i></span>
+    </div>
+</div>
 <!-- end: FOOTER -->
 <div id="event-management" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
     <div class="modal-dialog">
@@ -131,29 +138,30 @@
 </div>
 <!-- start: MAIN JAVASCRIPTS -->
 <!--[if lt IE 9]>
-<script src="{{ URL::to('/') }}/assets/plugins/respond.min.js"></script>
-<script src="{{ URL::to('/') }}/assets/plugins/excanvas.min.js"></script>
+<script src="assets/plugins/respond.min.js"></script>
+<script src="assets/plugins/excanvas.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <!--<![endif]-->
-<script src="{{ URL::to('/') }}/assets/plugins/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
-<script src="{{ URL::to('/') }}/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script src="{{ URL::to('/') }}/assets/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
-<script src="{{ URL::to('/') }}/assets/plugins/blockUI/jquery.blockUI.js"></script>
-<script src="{{ URL::to('/') }}/assets/plugins/iCheck/jquery.icheck.min.js"></script>
-<script src="{{ URL::to('/') }}/assets/plugins/perfect-scrollbar/src/jquery.mousewheel.js"></script>
-<script src="{{ URL::to('/') }}/assets/plugins/perfect-scrollbar/src/perfect-scrollbar.js"></script>
-<script src="{{ URL::to('/') }}/assets/plugins/less/less-1.5.0.min.js"></script>
-<script src="{{ URL::to('/') }}/assets/plugins/jquery-cookie/jquery.cookie.js"></script>
-<script src="{{ URL::to('/') }}/assets/plugins/bootstrap-colorpalette/js/bootstrap-colorpalette.js"></script>
-<script src="{{ URL::to('/') }}/assets/js/main.js"></script>
+<script src="assets/plugins/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+<script src="assets/plugins/blockUI/jquery.blockUI.js"></script>
+<script src="assets/plugins/iCheck/jquery.icheck.min.js"></script>
+<script src="assets/plugins/perfect-scrollbar/src/jquery.mousewheel.js"></script>
+<script src="assets/plugins/perfect-scrollbar/src/perfect-scrollbar.js"></script>
+<script src="assets/plugins/less/less-1.5.0.min.js"></script>
+<script src="assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+<script src="assets/plugins/bootstrap-colorpalette/js/bootstrap-colorpalette.js"></script>
+<script src="assets/js/main.js"></script>
 <!-- end: MAIN JAVASCRIPTS -->
-
 <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
     @yield('pageJS')
 <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+
+@yield('pageScript')
 
 </body>
 <!-- end: BODY -->
