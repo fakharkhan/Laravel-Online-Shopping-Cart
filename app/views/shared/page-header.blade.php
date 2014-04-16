@@ -12,7 +12,7 @@
                 </a>
             </li>
             <li class="active">
-                Vendors
+                {{ isset($heading) ? $heading : 'Page Heading' }}
             </li>
             <li class="search-box">
                 <form class="sidebar-search">

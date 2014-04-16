@@ -1,3 +1,2 @@
 @extends('layouts.layout')
-
-/Volumes/DATA/products/shoppingcartadmin/app/views/categories/show.blade.php
+@include('shared.page-header',array('heading'=> $category->name,'description'=>'click edit button to update this category'))

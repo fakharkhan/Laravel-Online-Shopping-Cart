@@ -158,10 +158,16 @@
 <script src="{{ URL::to('/') }}/assets/js/main.js"></script>
 <!-- end: MAIN JAVASCRIPTS -->
 <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+<script>
+    jQuery(document).ready(function () {
+        Main.init();
+    });
+</script>
+
     @yield('pageJS')
 <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 
-@yield('pageScript')
+
 
 </body>
 <!-- end: BODY -->

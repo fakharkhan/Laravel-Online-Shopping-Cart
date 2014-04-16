@@ -14,7 +14,6 @@
 
 <script>
     jQuery(document).ready(function () {
-        Main.init();
         TableData.init( {{ isset($tableID) ? "'$tableID'" : "'sample_1'" }} );
     });
 </script>

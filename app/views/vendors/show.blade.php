@@ -1,3 +1,2 @@
 @extends('layouts.layout')
-
-/Volumes/DATA/products/shoppingcartadmin/app/views/vendors/show.blade.php
+@include('shared.page-header',array('heading'=> $vendor->name,'description'=>'click edit button to update this vendor'))

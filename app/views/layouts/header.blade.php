@@ -249,7 +249,7 @@
                         <a href="javascript:;">
                             <div class="clearfix">
                                 <div class="thread-image">
-                                    <img alt="" src="./assets/images/avatar-2.jpg">
+                                    <img alt="" src="{{ URL::to('/') }}/assets/images/avatar-2.jpg">
                                 </div>
                                 <div class="thread-content">
                                     <span class="author">Nicole Bell</span>
@@ -263,7 +263,7 @@
                         <a href="javascript:;">
                             <div class="clearfix">
                                 <div class="thread-image">
-                                    <img alt="" src="./assets/images/avatar-1.jpg">
+                                    <img alt="" src="{{ URL::to('/') }}/assets/images/avatar-1.jpg">
                                 </div>
                                 <div class="thread-content">
                                     <span class="author">Peter Clark</span>
@@ -277,7 +277,7 @@
                         <a href="javascript:;">
                             <div class="clearfix">
                                 <div class="thread-image">
-                                    <img alt="" src="./assets/images/avatar-3.jpg">
+                                    <img alt="" src="{{ URL::to('/') }}/assets/images/avatar-3.jpg">
                                 </div>
                                 <div class="thread-content">
                                     <span class="author">Steven Thompson</span>
@@ -291,7 +291,7 @@
                         <a href="javascript:;">
                             <div class="clearfix">
                                 <div class="thread-image">
-                                    <img alt="" src="./assets/images/avatar-1.jpg">
+                                    <img alt="" src="{{ URL::to('/') }}/assets/images/avatar-1.jpg">
                                 </div>
                                 <div class="thread-content">
                                     <span class="author">Peter Clark</span>
@@ -305,7 +305,7 @@
                         <a href="javascript:;">
                             <div class="clearfix">
                                 <div class="thread-image">
-                                    <img alt="" src="./assets/images/avatar-5.jpg">
+                                    <img alt="" src="{{ URL::to('/') }}/assets/images/avatar-5.jpg">
                                 </div>
                                 <div class="thread-content">
                                     <span class="author">Kenneth Ross</span>
@@ -329,7 +329,7 @@
 <!-- start: USER DROPDOWN -->
 <li class="dropdown current-user">
     <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="true" href="#">
-        <img src="assets/images/avatar-1-small.jpg" class="circle-img" alt="">
+        <img src="{{ URL::to('/') }}/assets/images/avatar-1-small.jpg" class="circle-img" alt="">
         <span class="username">Peter Clark</span>
         <i class="clip-chevron-down"></i>
     </a>

@@ -23,10 +23,10 @@
                     <tbody>
                     @foreach ($categories as $category)
                     <tr>
-                        <td>{{ $category->name }}</td>
+                        <td>{{ link_to('categories/'.$category->id, $category->name) }} </td>
                         <td class="hidden-xs">{{ $category->description }}</td>
-                        <td class="hidden-xs center">
-                            @include('shared.grid-buttons',array('editLink'=>'new','removeLink'=>'Remove'))
+                        <td class="hidden-xs center" nowrap>
+                            @include('shared.grid-buttons',array('editLink'=> URL::to('categories/'.$category->id,'edit') ,'removeLink'=>'#'))
                         </td>
                     </tr>
                     @endforeach

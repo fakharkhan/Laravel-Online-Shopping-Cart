@@ -1,1 +1,2 @@
-/Volumes/DATA/products/shoppingcartadmin/app/views/vendors/create.blade.php
+@extends('layouts.layout')
+@include('shared.page-header',array('heading'=> 'Add Vendor','description'=>'click save button to add this vendor'))

@@ -768,18 +768,18 @@
 
 
 @section('pageCSS')
-<link rel="stylesheet" href="assets/plugins/fullcalendar/fullcalendar/fullcalendar.css">
+<link rel="stylesheet" href="{{ URL::to('/') }}/assets/plugins/fullcalendar/fullcalendar/fullcalendar.css">
 @stop
 
 @section('pageJS')
-<script src="assets/plugins/flot/jquery.flot.js"></script>
-<script src="assets/plugins/flot/jquery.flot.pie.js"></script>
-<script src="assets/plugins/flot/jquery.flot.resize.min.js"></script>
-<script src="assets/plugins/jquery.sparkline/jquery.sparkline.js"></script>
-<script src="assets/plugins/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
-<script src="assets/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
-<script src="assets/plugins/fullcalendar/fullcalendar/fullcalendar.js"></script>
-<script src="assets/js/index.js"></script>
+<script src="{{ URL::to('/') }}/assets/plugins/flot/jquery.flot.js"></script>
+<script src="{{ URL::to('/') }}/assets/plugins/flot/jquery.flot.pie.js"></script>
+<script src="{{ URL::to('/') }}/assets/plugins/flot/jquery.flot.resize.min.js"></script>
+<script src="{{ URL::to('/') }}/assets/plugins/jquery.sparkline/jquery.sparkline.js"></script>
+<script src="{{ URL::to('/') }}/assets/plugins/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+<script src="{{ URL::to('/') }}/assets/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+<script src="{{ URL::to('/') }}/assets/plugins/fullcalendar/fullcalendar/fullcalendar.js"></script>
+<script src="{{ URL::to('/') }}/assets/js/index.js"></script>
 @stop
 
 @section('pageScript')

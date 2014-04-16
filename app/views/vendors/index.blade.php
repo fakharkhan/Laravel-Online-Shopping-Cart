@@ -31,8 +31,8 @@
                         <td class="hidden-xs">{{ $vendor->web }}</td>
                         <td class="hidden-xs">{{ $vendor->telephone }}</td>
                         <td class="hidden-xs">{{ $vendor->postcode }}</td>
-                        <td class="hidden-xs center">
-                            @include('shared.grid-buttons',array('editLink'=>'new','removeLink'=>'Remove'))
+                        <td class="hidden-xs center" nowrap>
+                            @include('shared.grid-buttons',array('editLink'=> URL::to('vendors/'.$vendor->id,'edit') ,'removeLink'=>'#'))
                         </td>
                     </tr>
                     @endforeach
