@@ -1,5 +1,4 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
-
 <!-- start: TOP NAVIGATION CONTAINER -->
 <div class="container">
 <div class="navbar-header">
