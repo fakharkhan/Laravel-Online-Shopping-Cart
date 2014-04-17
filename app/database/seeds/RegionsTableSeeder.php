@@ -11,9 +11,7 @@ class RegionsTableSeeder extends Seeder {
 
 		foreach(range(1, 10) as $index)
 		{
-			Region::create([
-
-			]);
+			Region::create(array('description' => $faker->state));
 		}
 	}
 

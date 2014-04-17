@@ -9,11 +9,13 @@ class TerritoriesTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		foreach(range(1, 10) as $index)
+		foreach(range(1, 20) as $index)
 		{
-			Territory::create([
-
-			]);
+			Territory::create(array(
+                'code' => $faker->unique()->cityPrefix,
+                'description' => $faker->city,
+                'region_id' => $faker->randomNumber(1, 10)
+            ));
 		}
 	}
 

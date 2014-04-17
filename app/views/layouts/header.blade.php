@@ -9,7 +9,7 @@
     <!-- end: RESPONSIVE MENU TOGGLER -->
     <!-- start: LOGO -->
     <a class="navbar-brand" href="{{ URL::to('/') }}">
-        Shopping<i class="fa fa-shopping-cart"></i>Cart
+        Shopping<i class="fa fa-shopping-cart"></i>Online
     </a>
     <!-- end: LOGO -->
 </div>

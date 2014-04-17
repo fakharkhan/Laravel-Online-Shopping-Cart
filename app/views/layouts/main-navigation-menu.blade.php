@@ -32,18 +32,8 @@
             </a>
         </li>
         <li>
-            <a href="{{ URL::to('employees') }}">
-                <span class="title"><i class="fa fa-group"></i> Employees </span>
-            </a>
-        </li>
-        <li>
             <a href="{{ URL::to('territories') }}">
                 <span class="title"><i class="fa fa-group"></i> Territories </span>
-            </a>
-        </li>
-        <li>
-            <a href="{{ URL::to('customers') }}">
-                <span class="title"><i class="fa fa-group"></i> Customers </span>
             </a>
         </li>
         <li>
@@ -51,6 +41,18 @@
                 <span class="title"><i class="fa fa-group"></i> Shippers </span>
             </a>
         </li>
+        <li>
+            <a href="{{ URL::to('employees') }}">
+                <span class="title"><i class="fa fa-group"></i> Employees </span>
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ URL::to('customers') }}">
+                <span class="title"><i class="fa fa-group"></i> Customers </span>
+            </a>
+        </li>
+
         <li>
             <a href="{{ URL::to('orders') }}">
                 <span class="title"><i class="fa fa-group"></i> Orders </span>

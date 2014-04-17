@@ -103,14 +103,7 @@
 </div>
 <!-- end: MAIN CONTAINER -->
 <!-- start: FOOTER -->
-<div class="footer clearfix">
-    <div class="footer-inner">
-        2014 &copy; clip-one by cliptheme.
-    </div>
-    <div class="footer-items">
-        <span class="go-top"><i class="clip-chevron-up"></i></span>
-    </div>
-</div>
+@include('layouts.footer')
 <!-- end: FOOTER -->
 <div id="event-management" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
     <div class="modal-dialog">

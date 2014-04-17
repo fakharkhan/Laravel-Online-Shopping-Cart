@@ -11,9 +11,13 @@ class ShippersTableSeeder extends Seeder {
 
 		foreach(range(1, 10) as $index)
 		{
-			Shipper::create([
-
-			]);
+			Shipper::create(array(
+                'companyname' => $faker->company,
+                'contactname' => $faker->name,
+                'phone' => $faker->phoneNumber,
+                'fax' => $faker->phoneNumber,
+                'email' => $faker->companyEmail
+            ));
 		}
 	}
 

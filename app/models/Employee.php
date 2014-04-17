@@ -10,4 +10,8 @@ class Employee extends \Eloquent {
 	// Don't forget to fill this array
 	protected $fillable = [];
 
+    public function manager()
+    {
+        return $this->belongsTo('Employee','manager_id');
+    }
 }
