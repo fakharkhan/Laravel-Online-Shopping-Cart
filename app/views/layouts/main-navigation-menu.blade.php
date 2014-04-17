@@ -26,6 +26,36 @@
                 <span class="title"><i class="fa fa-group"></i> Products </span>
             </a>
         </li>
+        <li>
+            <a href="{{ URL::to('regions') }}">
+                <span class="title"><i class="fa fa-group"></i> Regions </span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ URL::to('employees') }}">
+                <span class="title"><i class="fa fa-group"></i> Employees </span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ URL::to('territories') }}">
+                <span class="title"><i class="fa fa-group"></i> Territories </span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ URL::to('customers') }}">
+                <span class="title"><i class="fa fa-group"></i> Customers </span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ URL::to('shippers') }}">
+                <span class="title"><i class="fa fa-group"></i> Shippers </span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ URL::to('orders') }}">
+                <span class="title"><i class="fa fa-group"></i> Orders </span>
+            </a>
+        </li>
     </ul>
 </li>
 <li>

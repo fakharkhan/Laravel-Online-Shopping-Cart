@@ -19,3 +19,12 @@ Route::get('/', function()
 Route::resource('vendors', 'VendorsController');
 Route::resource('categories', 'CategoriesController');
 Route::resource('products', 'ProductsController');
+
+Route::resource('regions', 'RegionsController');
+Route::resource('employees', 'EmployeesController');
+Route::resource('territories', 'TerritoriesController');
+
+Route::resource('customers', 'CustomersController');
+Route::resource('shippers', 'ShippersController');
+
+Route::resource('orders', 'OrdersController');

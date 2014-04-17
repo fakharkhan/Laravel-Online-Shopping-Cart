@@ -1,0 +1,1 @@
+/Volumes/DATA/products/shoppingcartadmin/app/views/regions/show.blade.php
