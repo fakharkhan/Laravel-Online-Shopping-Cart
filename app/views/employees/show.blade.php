@@ -1,1 +1,2 @@
-/Volumes/DATA/products/shoppingcartadmin/app/views/employees/show.blade.php
+@extends('layouts.layout')
+@include('shared.page-header')

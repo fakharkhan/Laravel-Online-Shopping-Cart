@@ -25,13 +25,12 @@
                     <tbody>
                     @foreach ($customers as $customer)
                     <tr>
-                        <td>{{ link_to('Customers/'.$customer->id, $customer->companyname) }} </td>
+                        <td>{{ link_to('customers/'.$customer->id, $customer->companyname) }} </td>
                         <td>{{ $customer->contactname }} </td>
                         <td >{{ $customer->contacttitle }} </td>
                         <td class="hidden-xs">{{ $customer->city }} </td>
-
                         <td class="hidden-xs center" nowrap>
-                            @include('shared.grid-buttons',array('editLink'=> URL::to('Customers/'.$customer->id,'edit') ,'removeLink'=>'#'))
+                            @include('shared.grid-buttons',array('editLink'=> URL::to('customers/'.$customer->id,'edit') ,'removeLink'=>'#'))
                         </td>
                     </tr>
                     @endforeach

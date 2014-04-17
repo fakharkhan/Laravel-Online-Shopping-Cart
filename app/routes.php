@@ -11,20 +11,25 @@
 |
 */
 
-Route::get('/', function()
+if (Auth::attempt(array('email' => 'admin@cart.com', 'password' => 'admin')))
 {
-	return View::make('home');
+    Route::get('/', 'HomeController@showHome');
+
+
+}
+
+Route::group(array('before' => 'auth'), function () {
+    Route::resource('vendors', 'VendorsController');
+    Route::resource('categories', 'CategoriesController');
+    Route::resource('products', 'ProductsController');
+
+    Route::resource('regions', 'RegionsController');
+    Route::resource('employees', 'EmployeesController');
+    Route::resource('territories', 'TerritoriesController');
+
+    Route::resource('customers', 'CustomersController');
+    Route::resource('shippers', 'ShippersController');
+
+    Route::resource('orders', 'OrdersController');
 });
 
-Route::resource('vendors', 'VendorsController');
-Route::resource('categories', 'CategoriesController');
-Route::resource('products', 'ProductsController');
-
-Route::resource('regions', 'RegionsController');
-Route::resource('employees', 'EmployeesController');
-Route::resource('territories', 'TerritoriesController');
-
-Route::resource('customers', 'CustomersController');
-Route::resource('shippers', 'ShippersController');
-
-Route::resource('orders', 'OrdersController');
