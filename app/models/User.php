@@ -67,9 +67,22 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
     {
         return array(
             'Orders' => array('url' => 'javascript:void(0)','icon'=>'fa fa-shopping-cart', 'actions' => array('All Orders' => 'orders', 'New Order' => 'orders/create')),
-            'Employees' => array('url' => 'javascript:void(0)','icon'=>'clip-users-3', 'actions' => array('All Employees' => 'employees', 'New Employee' => 'employees/create')),
+
+            'Employees' => array('url' => 'javascript:void(0)','icon'=>'fa fa-suitcase', 'actions' => array('All Employees' => 'employees', 'New Employee' => 'employees/create')),
+
             'Products' => array('url' => 'javascript:void(0)','icon'=>'fa fa-barcode', 'actions' => array('All Products' => 'products', 'New Product' => 'products/create')),
-            'Categories' => array('url' => 'javascript:void(0)','icon'=>'clip-users-3', 'actions' => array('All Categories' => 'categories', 'New Category' => 'categories/create'))
+
+            'Categories' => array('url' => 'javascript:void(0)','icon'=>'fa fa-sitemap', 'actions' => array('All Categories' => 'categories', 'New Category' => 'categories/create')),
+
+            'Shippers' => array('url' => 'javascript:void(0)','icon'=>'clip-tree-2', 'actions' => array('All Shippers' => 'shippers', 'New Shipper' => 'shippers/create')),
+
+            'Vendors' => array('url' => 'javascript:void(0)','icon'=>'fa fa-truck', 'actions' => array('All Vendors' => 'vendors', 'New Vendor' => 'vendors/create')),
+
+            'Regions' => array('url' => 'javascript:void(0)','icon'=>'clip-checkbox-partial', 'actions' => array('All Regions' => 'regions', 'New Region' => 'regions/create')),
+
+            'Territories' => array('url' => 'javascript:void(0)','icon'=>'clip-earth', 'actions' => array('All Territories' => 'territories', 'New Territory' => 'territories/create')),
+
+
         );
     }
 

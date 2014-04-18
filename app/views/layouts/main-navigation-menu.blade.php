@@ -24,4 +24,5 @@
         </li>
         @endforeach
     @endif
+@include('layouts.theme')
 </ul>
