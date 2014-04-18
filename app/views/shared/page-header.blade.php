@@ -31,5 +31,32 @@
         <!-- end: PAGE TITLE & BREADCRUMB -->
     </div>
 </div>
+
+
+<!-- start: Errors Block-->
+<div class="row">
+    <div class="col-sm-12">
+        <!--            Client side validations-->
+        <div class="errorHandler alert alert-danger no-display">
+            <i class="fa fa-times-sign"></i> You have some form errors. Please check below.
+        </div>
+        <div class="successHandler alert alert-success no-display">
+            <i class="fa fa-ok"></i> Your form validation is successful!
+        </div>
+<!--            Server side validations-->
+        @if ($errors->any())
+        <div class="alert alert-block alert-danger fade in">
+            <button data-dismiss="alert" class="close" type="button"> × </button>
+            <h4 class="alert-heading"><i class="fa fa-times-circle"></i> Error!</h4>
+            <ul>
+                {{ implode('', $errors->all('<li class="error">:message</li>')) }}
+            </ul>
+        </div>
+        @endif
+
+    </div>
+</div>
+<!-- end: Errors Block-->
+
 <!-- end: PAGE HEADER -->
 @stop

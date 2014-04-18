@@ -21,7 +21,10 @@ class TerritoriesController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('territories.create');
+
+        $regions = Region::all()->lists('description','id');//+array('0'=>'None')
+
+		return View::make('territories.create', compact('regions'));
 	}
 
 	/**

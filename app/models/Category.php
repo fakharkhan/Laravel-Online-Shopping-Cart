@@ -2,13 +2,16 @@
 
 class Category extends \Eloquent {
 
-	// Add your validation rules here
+    protected $guarded = array();
+
+    // Add your validation rules here
 	public static $rules = [
-		// 'title' => 'required'
+		 'name' => 'required',
+         'picture' => 'required'
 	];
 
-	// Don't forget to fill this array
-	protected $fillable = [];
+//	// Don't forget to fill this array
+//	protected $fillable = [];
 
     public function products()
     {
