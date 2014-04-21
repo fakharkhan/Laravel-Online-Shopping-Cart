@@ -1,7 +1,8 @@
 <div class="visible-md visible-lg hidden-sm hidden-xs" >
     <a href="{{ isset($editLink) ? $editLink : '#' }}" class="btn btn-xs btn-teal tooltips" data-placement="top" data-original-title="Edit"><i class="fa fa-edit"></i></a>
-    <a href="{{ isset($removeLink) ? $removeLink : '#' }}" class="btn btn-xs btn-bricky tooltips" data-placement="top" data-original-title="Remove"><i class="fa fa-times fa fa-white"></i></a>
+    <a  onclick="{{ isset($function) ? $function : '' }}" class="btn btn-xs btn-bricky tooltips" data-placement="top" data-original-title="Remove"><i class="fa fa-times fa fa-white"></i></a>
 </div>
+
 <div class="visible-xs visible-sm hidden-md hidden-lg">
     <div class="btn-group">
         <a class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" href="#">
@@ -14,7 +15,7 @@
                 </a>
             </li>
             <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="{{ isset($removeLink) ? $removeLink : '#' }}">
+                <a role="menuitem" tabindex="-1"  onclick="{{ isset($function) ? $function : '' }}">
                     <i class="fa fa-times"></i> Remove
                 </a>
             </li>

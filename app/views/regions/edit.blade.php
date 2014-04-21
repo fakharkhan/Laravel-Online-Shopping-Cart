@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 @include('shared.page-header',array('heading'=>'Edit Region','description'=>'Update required fields and press save button'))
-@section('content')
 
+@section('content')
 <!-- start: PAGE CONTENT -->
 <div class="row">
     <div class="col-sm-12">

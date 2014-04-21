@@ -4,11 +4,13 @@ class Territory extends \Eloquent {
 
 	// Add your validation rules here
 	public static $rules = [
-		// 'title' => 'required'
+		 'code' => 'required',
+         'description' => 'required',
+        'region_id' => 'required'
 	];
 
 	// Don't forget to fill this array
-	protected $fillable = [];
+    protected $guarded = array();
 
 
     public function region()

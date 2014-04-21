@@ -24,7 +24,7 @@
                     <tr>
                         <td>{{ link_to('regions/'.$region->id, $region->description) }} </td>
                         <td class="hidden-xs center" nowrap>
-                            @include('shared.grid-buttons',array('editLink'=> URL::to('regions/'.$region->id,'edit') ,'removeLink'=>'#'))
+                            @include('shared.grid-buttons',array('editLink'=> URL::to('regions/'.$region->id,'edit') ,'function'=>'delete_region(this,'.$region->id.');'))
                         </td>
                     </tr>
                     @endforeach

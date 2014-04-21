@@ -1,7 +1,8 @@
 @extends('layouts.layout')
 @include('shared.page-header',array('heading'=>'New Territory','description'=>'Enter required fields and press save button'))
-@section('content')
 
+
+@section('content')
 <!-- start: PAGE CONTENT -->
 <div class="row">
     <div class="col-sm-12">
@@ -11,7 +12,7 @@
             @include('form.title',array('text' => 'Territory Fields'))
             <div class="panel-body">
                 @include('form.select',array('field'=> 'region_id','source'=>$regions,'label'=>'Select Region:','required'=>'true'))
-                @include('form.input',array('field'=> 'name','required'=>'true','label'=>'Name:','placeholder'=>'Enter Territory name'))
+                @include('form.input',array('field'=> 'code','required'=>'true','label'=>'Code:','placeholder'=>'Enter Territory code'))
                 @include('form.input',array('field'=> 'description','label'=>'Description:','placeholder'=>'Enter Territory description'))
             </div>
             <div class="panel-footer">

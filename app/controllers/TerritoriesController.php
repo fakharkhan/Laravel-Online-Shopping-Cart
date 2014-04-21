@@ -68,8 +68,9 @@ class TerritoriesController extends \BaseController {
 	public function edit($id)
 	{
 		$territory = Territory::find($id);
+        $regions = Region::all()->lists('description','id');//+array('0'=>'None')
 
-		return View::make('territories.edit', compact('territory'));
+		return View::make('territories.edit', compact('territory','regions'));
 	}
 
 	/**

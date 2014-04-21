@@ -6,7 +6,7 @@
     @endif
 
     @if(isset($cancel))
-    <button type="button" class="btn btn-default">
+    <button type="reset" class="btn btn-default">
         {{ $cancel }}
     </button>
     @endif

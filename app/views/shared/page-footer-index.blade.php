@@ -10,7 +10,9 @@
 <script type="text/javascript" src="{{ URL::to('/') }}/assets/plugins/select2/select2.min.js"></script>
 <script type="text/javascript" src="{{ URL::to('/') }}/assets/plugins/DataTables/media/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="{{ URL::to('/') }}/assets/plugins/DataTables/media/js/DT_bootstrap.js"></script>
-<script src="{{ URL::to('/') }}/assets/js/table-data.js"></script>
+<script type="text/javascript" src="{{ URL::to('/') }}/assets/js/table-data.js"></script>
+
+<script type="text/javascript" src="{{ URL::to('/') }}/assets/js/custom.js"></script>
 
 <script>
     jQuery(document).ready(function () {
