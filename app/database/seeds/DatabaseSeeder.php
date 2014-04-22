@@ -17,10 +17,10 @@ class DatabaseSeeder extends Seeder {
     //  $this->call('RegionsTableSeeder');
     //    $this->call('TerritoriesTableSeeder');
      //  $this->call('ShippersTableSeeder');
-      //  $this->call('EmployeesTableSeeder');
-      //  $this->call('CustomersTableSeeder');
+       $this->call('EmployeesTableSeeder');
+     //   $this->call('CustomersTableSeeder');
        // $this->call('OrdersTableSeeder');
-        $this->call('UsersTableSeeder');
+      //  $this->call('UsersTableSeeder');
 
     }
 
